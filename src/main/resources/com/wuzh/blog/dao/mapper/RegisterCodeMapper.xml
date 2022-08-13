@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--MyBatis配置文件-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper  namespace="com.wuzh.blog.dao.mapper.RegisterCodeMapper">
+    <resultMap  id="RegisterCodeMapper" type="com.wuzh.blog.dao.pojo.RegisterCode"></resultMap>
+
+    <select id="findcode" resultType="com.wuzh.blog.dao.pojo.RegisterCode">
+        SELECT num FROM `community_registercode`
+    </select>
+</mapper>
